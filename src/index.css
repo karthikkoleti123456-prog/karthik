@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Orbitron", sans-serif;
+
+  --color-neon-pink: #ff00ff;
+  --color-neon-blue: #00ffff;
+  --color-neon-green: #00ff00;
+  --color-neon-yellow: #ffff00;
+  --color-cyber-black: #050505;
+  --color-cyber-gray: #1a1a1a;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cyber-black);
+    color: #ffffff;
+    @apply font-sans;
+  }
+}
+
+@utility neon-shadow-pink {
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+@utility neon-shadow-blue {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+@utility neon-shadow-green {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+@utility neon-text-pink {
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+@utility neon-text-blue {
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+@utility neon-text-green {
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
